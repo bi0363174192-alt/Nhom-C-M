@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
@@ -33,3 +33,4 @@ public class AudioManager : MonoBehaviour
         effectAudioSource.PlayOneShot(jumpClip);
     }
 }
+// địt con mẹ mày 
