@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip backgroundClip;
     [SerializeField] private AudioClip jumpClip;
     [SerializeField] private AudioClip coinClip;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,4 +34,4 @@ public class AudioManager : MonoBehaviour
         effectAudioSource.PlayOneShot(jumpClip);
     }
 }
-// địt con mẹ mày 
+ 
