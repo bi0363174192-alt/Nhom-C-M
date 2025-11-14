@@ -33,4 +33,4 @@ public class AudioManager : MonoBehaviour
         effectAudioSource.PlayOneShot(jumpClip);
     }
 }
-// địt con mẹ mày 
+ 
