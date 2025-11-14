@@ -5048,6 +5048,75 @@ Tilemap:
   - m_RefCount: 364
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 1
+ chinh_map_va_them_background
+    m_Data: {r: 0.9156052, g: 0.62532324, b: 0.6358904, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.9382796, g: 0.4911567, b: 0.5296922, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.82414335, g: 0.4812756, b: 0.54602563, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.76532364, g: 0.31114098, b: 0.43939272, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.95751995, g: 0.5816293, b: 0.6414032, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.72288233, g: 0.41265425, b: 0.45780522, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.90103346, g: 0.5188892, b: 0.6340158, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.9233239, g: 0.5374792, b: 0.5826198, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8348739, g: 0.46097383, b: 0.5756849, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.90901494, g: 0.57393277, b: 0.6328707, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.85415274, g: 0.3760301, b: 0.43613422, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.9952836, g: 0.44736904, b: 0.5743072, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.9278251, g: 0.44619817, b: 0.5249556, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8345582, g: 0.45589855, b: 0.5618914, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8564667, g: 0.5033215, b: 0.5133064, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8679762, g: 0.3796233, b: 0.4940407, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8015175, g: 0.4067543, b: 0.43073976, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8434369, g: 0.36184615, b: 0.42765743, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.7510142, g: 0.43225572, b: 0.5212578, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.9885464, g: 0.63598806, b: 0.6925816, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8499884, g: 0.42400676, b: 0.52691215, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.94433475, g: 0.52518016, b: 0.54058045, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8267764, g: 0.49772134, b: 0.5762831, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.7224584, g: 0.383001, b: 0.40371692, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8168519, g: 0.46136215, b: 0.50313675, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8841167, g: 0.52790916, b: 0.5374719, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.96453977, g: 0.61689454, b: 0.6214804, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.98709685, g: 0.68175393, b: 0.73830235, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.74941796, g: 0.46406153, b: 0.48899406, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.7936553, g: 0.40809274, b: 0.4711371, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.9130437, g: 0.4663765, b: 0.542176, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8632982, g: 0.5455663, b: 0.6078906, a: 1}
+  - m_RefCount: 1
+    m_Data: {r: 0.8363857, g: 0.5803612, b: 0.58086884, a: 1}
+  - m_RefCount: 2
+    m_Data: {r: 0.9087679, g: 0.5791752, b: 0.60397583, a: 1}
+
     m_Data: {r: 0.9076169, g: 0.46019557, b: 0.5193115, a: 1}
   - m_RefCount: 1
     m_Data: {r: 0.9805994, g: 0.47679, b: 0.5582086, a: 1}
@@ -5115,6 +5184,7 @@ Tilemap:
     m_Data: {r: 0.9379413, g: 0.5821667, b: 0.6390716, a: 1}
   - m_RefCount: 2
     m_Data: {r: 0.9512607, g: 0.56521523, b: 0.6114449, a: 1}
+ main
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5264,7 +5334,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1749820602252184201, guid: b42e872b16ad2e34d8abd0a726f5bfe7, type: 3}
   m_PrefabInstance: {fileID: 969547623106780784}
   m_PrefabAsset: {fileID: 0}
+ chinh_map_va_them_background
+--- !u!114 &780541584414657212
+=======
 --- !u!114 &5837259711525799938
+ main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
