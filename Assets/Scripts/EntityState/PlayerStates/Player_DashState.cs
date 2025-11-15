@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PLayer_DashState : EntityState
+public class PLayer_DashState : PlayerState
 {
     private float originalGravityScale;
     private int dashDir;
@@ -13,7 +13,7 @@ public class PLayer_DashState : EntityState
         base.Enter();
         // hướng dash dựa trên input, nếu không có input thì dash theo hướng đang quay mặt
         dashDir = player.moveInput.x != 0 ? (int)(player.moveInput.x) : player.facingDir; 
-        stateTimer = player.dashDurtaion; // thiết lập thời gian trạng thái bằng thời gian dash
+        stateTimer = player.dashDuration; // thiết lập thời gian trạng thái bằng thời gian dash
         originalGravityScale = rb.gravityScale;   // lưu lại giá trị gravityScale ban đầu
         rb.gravityScale = 0; // tắt trọng lực trong khi dash
     }

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-public class StateMachine 
+public class StateMachine
 {
     public EntityState currentState { get; private set; }
-  
+
     /* Các trạng thái của nhân vật sẽ được quản lý bởi StateMachine, các phương thức Enter
     , Update(), Exit(), Enter() sẽ được gọi từ EntityState.cs */
 

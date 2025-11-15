@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream
 --- !u!1 &871425495773663044
+=======
+--- !u!1 &1832229032673471032
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,6 +12,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 6770019007758388010}
   - component: {fileID: 1429517827798721330}
   m_Layer: 0
@@ -56,6 +61,11 @@ GameObject:
   - component: {fileID: 1466431890181242818}
   - component: {fileID: 4651961056432492077}
   - component: {fileID: 6890304047996699544}
+=======
+  - component: {fileID: 1173863218135947679}
+  - component: {fileID: 5901992434705489910}
+  - component: {fileID: 3068022019695167017}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Layer1
   m_TagString: Untagged
@@ -63,27 +73,42 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!4 &1466431890181242818
+=======
+--- !u!4 &1173863218135947679
+>>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 3761953956977108230}
+=======
+  m_GameObject: {fileID: 1832229032673471032}
+>>>>>>> Stashed changes
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+<<<<<<< Updated upstream
   m_Father: {fileID: 6770019007758388010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &4651961056432492077
+=======
+  m_Father: {fileID: 4777542369377681445}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1839735485 &5901992434705489910
+>>>>>>> Stashed changes
 Tilemap:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 3761953956977108230}
   m_Enabled: 1
   m_Tiles:
@@ -558,6 +583,12 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -6, y: 2, z: 0}
+=======
+  m_GameObject: {fileID: 1832229032673471032}
+  m_Enabled: 1
+  m_Tiles:
+  - first: {x: -3, y: 3, z: 0}
+>>>>>>> Stashed changes
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -567,7 +598,11 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< Updated upstream
   - first: {x: -5, y: 2, z: 0}
+=======
+  - first: {x: -4, y: 5, z: 0}
+>>>>>>> Stashed changes
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -577,6 +612,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< Updated upstream
   - first: {x: -4, y: 2, z: 0}
     second:
       serializedVersion: 2
@@ -974,6 +1010,21 @@ Tilemap:
     m_Data: {fileID: -5361001871073967805, guid: 9b0bd6dc478999a4693f7ba276782b88, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 63
+=======
+  m_AnimatedTiles: {}
+  m_TileAssetArray:
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 8377be3780b63de4cba9c5b0e3860237, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 7d76090377506dc459e10cb7dc8c00cf, type: 2}
+  m_TileSpriteArray:
+  - m_RefCount: 1
+    m_Data: {fileID: 7249804179231347537, guid: 385b77fadc65c3946a9d9e0f0bca18aa, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 645411862609229670, guid: 250f51fcd626f3348af2acb9f86995de, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 2
+>>>>>>> Stashed changes
     m_Data:
       e00: 1
       e01: 0
@@ -992,13 +1043,22 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+<<<<<<< Updated upstream
   - m_RefCount: 63
+=======
+  - m_RefCount: 2
+>>>>>>> Stashed changes
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< Updated upstream
   m_Origin: {x: -40, y: -3, z: 0}
   m_Size: {x: 40, y: 8, z: 1}
+=======
+  m_Origin: {x: -4, y: 3, z: 0}
+  m_Size: {x: 2, y: 3, z: 1}
+>>>>>>> Stashed changes
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -1018,13 +1078,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< Updated upstream
 --- !u!483693784 &6890304047996699544
+=======
+--- !u!483693784 &3068022019695167017
+>>>>>>> Stashed changes
 TilemapRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 3761953956977108230}
+=======
+  m_GameObject: {fileID: 1832229032673471032}
+>>>>>>> Stashed changes
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -1066,14 +1134,67 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
+<<<<<<< Updated upstream
   m_ChunkCullingBounds: {x: 7.0625, y: 7.03125, z: 0}
+=======
+  m_ChunkCullingBounds: {x: 1.0625, y: 0.3125, z: 0}
+>>>>>>> Stashed changes
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+<<<<<<< Updated upstream
 --- !u!114 &2572615596043822042
+=======
+--- !u!1 &3204930339783551308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4777542369377681445}
+  - component: {fileID: 1097759228277305169}
+  m_Layer: 0
+  m_Name: New Tile Palette
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4777542369377681445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3204930339783551308}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1173863218135947679}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!156049354 &1097759228277305169
+Grid:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3204930339783551308}
+  m_Enabled: 1
+  m_CellSize: {x: 3.125, y: 1.625, z: 0}
+  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellLayout: 0
+  m_CellSwizzle: 0
+--- !u!114 &3929106934180392196
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
