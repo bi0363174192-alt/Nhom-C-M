@@ -8,14 +8,30 @@ public class Menu : MonoBehaviour
     public void PlayGame()
     {
         audioSource.PlayOneShot(clickClip);
-        SceneManager.LoadScene("Game");
+
+        //Tải màn hình LOADING
+        MySceneManager.LoadSceneWithLoading("Game");
     }
 
     // chuyển hướng tới cài đặt game? (dự định)
     public void SettingGame()
     {
         audioSource.PlayOneShot(clickClip);
-        SceneManager.LoadScene("Setting");
+        MySceneManager.LoadSceneWithLoading("Setting");
+    }
+
+    //url cho chuyển hướng bên ngoài, thêm liên kết bên dưới OnClick() của Button (Inspector trong unity)
+    public void OpenLink(string url)
+    {
+        if (!string.IsNullOrEmpty(url))
+        {
+            Application.OpenURL(url);
+            Debug.Log("Opening URL: " + url);
+        }
+        else
+        {
+            Debug.LogWarning("URL provided is empty!");
+        }
     }
     
 
