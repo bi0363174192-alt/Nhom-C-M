@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            audioManager.PlayJumpSound();
+            //audioManager.PlayJumpSound();
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
