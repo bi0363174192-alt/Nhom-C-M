@@ -17,14 +17,14 @@ public class GameManager : MonoBehaviour
         gameWinUi.SetActive(false);
     }
 
-    public void AddScore(int points)
-    {
-        if (!isGameOver&&!isGameWin)
-        {
-            score += points;
-            UpdateScore();
-        }
-    }
+    //public void AddScore(int points)
+    //{
+    //    if (!isGameOver&&!isGameWin)
+    //    {
+    //        score += points;
+    //        UpdateScore();
+    //    }
+    //}
     private void UpdateScore()
     {
         scoreText.text = score.ToString();
