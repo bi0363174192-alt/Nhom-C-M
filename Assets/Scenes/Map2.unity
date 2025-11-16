@@ -1688,19 +1688,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
-      value: 5.6532073
-      objectReference: {fileID: 0}
-    - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5827503
-=======
       value: 4.0062585
       objectReference: {fileID: 0}
     - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.5878401
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
       propertyPath: m_LocalPosition.z

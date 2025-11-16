@@ -841,19 +841,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
-      value: 487.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.06
-=======
       value: -0.117004395
       objectReference: {fileID: 0}
     - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.5995436
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
       propertyPath: m_LocalPosition.z
@@ -992,8 +984,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2148877939372874484, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1002,7 +992,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GotoMenu
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 7241840304240773500, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
