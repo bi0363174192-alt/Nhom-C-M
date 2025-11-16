@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private GameManager gameManager;
-    private AudioManager audioManager;
     public float fallLimit = -10f;
 
     private void Awake()
@@ -19,7 +18,6 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         gameManager = FindAnyObjectByType<GameManager>();
-        audioManager = FindAnyObjectByType<AudioManager>();
     }
 
     void Update()

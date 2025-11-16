@@ -1,32 +1,43 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource backgroundAudioSource;
-    [SerializeField] private AudioSource effectAudioSource;
-    [SerializeField] private AudioClip backgroundClip;
-    //[SerializeField] private AudioClip jumpClip;
-    
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static AudioManager instance;
+    [SerializeField] private AudioDatabaseSO audioDB;
+    [SerializeField] private AudioSource bgmSource;
+    [SerializeField] private AudioSource sfxSource;
+
+
+    private void Awake()
     {
-        PlayBackGroundMusic();
+
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlaySFX(string soundName, AudioSource sfxSource)
     {
-        
-    }
-    public void PlayBackGroundMusic()
-    {
-        backgroundAudioSource.clip = backgroundClip;
-        backgroundAudioSource.Play();
-    }
-    //public void PlayJumpSound()
-    //{
-    //    effectAudioSource.PlayOneShot(jumpClip);
-    //}
+        var data = audioDB.Get(soundName);
+        if (data == null)
+        {
+            Debug.Log("Attemp to play sound: " + soundName);
+            return;
+        }
+
+        var clip = data.GetRandomClip();
+        if (clip == null)
+            return;
+
+        sfxSource.clip = clip;
+        sfxSource.PlayOneShot(clip);
+     } 
 }
  
