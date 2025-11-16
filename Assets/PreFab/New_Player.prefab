@@ -172,6 +172,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26bd8815195a09a4ab0f4e5eb6b82791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckDistance: 0.64
+  wallCheckDistance: 0.34
+  groundCheck: {fileID: 0}
+  primaryWallCheck: {fileID: 7652539167667900880}
+  secondaryWallCheck: {fileID: 189240198126965792}
   attackVelocity:
   - {x: 1, y: 2}
   - {x: 2, y: 2}
@@ -180,19 +188,12 @@ MonoBehaviour:
   attackVelocityDuration: 0.1
   comboResetTime: 1
   moveSpeed: 10
-  junpForce: 12
+  jumpForce: 5
   wallJumpForce: {x: 6, y: 12}
   inAirMoveMultiplier: 0.7
   wallSlideSlowMultiplier: 0.7
-  dashDurtaion: 0.25
+  dashDuration: 0.25
   dashSpeed: 20
-  groundCheckDistance: 0.64
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  wallCheckDistance: 0.34
-  primaryWallCheck: {fileID: 7652539167667900880}
-  secondaryWallCheck: {fileID: 189240198126965792}
 --- !u!1 &3859584241765240880
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,8 +272,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1082965513
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1101268818540134656, guid: cd41cd044d53cbb45802edb04d2d4f03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
