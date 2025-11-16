@@ -218,13 +218,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1795676215456859036, guid: 739fe60947075834392a86c96e676d1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 261925166}
   m_SourcePrefab: {fileID: 100100000, guid: 739fe60947075834392a86c96e676d1d, type: 3}
 --- !u!4 &261925164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8943907933219951594, guid: 739fe60947075834392a86c96e676d1d, type: 3}
   m_PrefabInstance: {fileID: 261925163}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &261925165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1795676215456859036, guid: 739fe60947075834392a86c96e676d1d, type: 3}
+  m_PrefabInstance: {fileID: 261925163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &261925166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261925165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3f9b5e7e24d6f4f8fc69b54e56820a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollection
 --- !u!1001 &364122351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8325,6 +8345,14 @@ PrefabInstance:
     - target: {fileID: 8127769961171901674, guid: b8d2aa8426feffc498438127ee20da8b, type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438668685428647088, guid: b8d2aa8426feffc498438127ee20da8b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438668685428647088, guid: b8d2aa8426feffc498438127ee20da8b, type: 3}
+      propertyPath: jumpClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
