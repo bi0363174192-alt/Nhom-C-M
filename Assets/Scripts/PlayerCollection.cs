@@ -15,7 +15,7 @@ public class PlayerCollection : MonoBehaviour
  
         if (collision.CompareTag("Trap"))
         {
-            gameManager.GameOver();
+            gameManager.GameOver(); 
         }
         else if (collision.CompareTag("Enemy"))
         {
