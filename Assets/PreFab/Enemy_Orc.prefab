@@ -246,11 +246,6 @@ MonoBehaviour:
   groundCheck: {fileID: 2795985393258846291}
   primaryWallCheck: {fileID: 3179230216657965745}
   secondaryWallCheck: {fileID: 0}
-  battleMoveSpeed: 3
-  attackRange: 1.4
-  battleTimeDuration: 5
-  minRetreatDistance: 1
-  retreatVelocity: {x: 3.4, y: 3}
   movementSpeed: 1.4
   idleTime: 2
   moveAnimSpeedMultiplier: 1
