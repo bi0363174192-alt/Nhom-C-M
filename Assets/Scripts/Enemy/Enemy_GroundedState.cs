@@ -12,7 +12,7 @@ public class Enemy_GroundedState : EnemyState
 
         //khi quai vat nhan thay duoc nguoi choi
         //state machine chuyen state thanh battle state
-        if (enemy.PlayerDection() == true)
+        if (enemy.PlayerDetection() == true)
         {
             stateMachine.ChangeState(enemy.battleState);
         }

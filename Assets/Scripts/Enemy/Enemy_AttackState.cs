@@ -1,7 +1,9 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Enemy_AttackState : EnemyState
 {
+    //đây là trạng thái tấn công của quái vật
+
     public Enemy_AttackState(Enemy enemy, StateMachine stateMachine, string animBoolName) : base(enemy, stateMachine, animBoolName)
     {
     }
@@ -13,7 +15,7 @@ public class Enemy_AttackState : EnemyState
 
         if (triggerCalled)
         {
-            stateMachine.ChangeState(enemy.idleState);
+            stateMachine.ChangeState(enemy.battleState);
         }
     }
 }

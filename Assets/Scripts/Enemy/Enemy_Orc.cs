@@ -1,7 +1,8 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Enemy_Orc : Enemy
 {
+
     protected override void Awake()
     {
         base.Awake();
@@ -11,7 +12,7 @@ public class Enemy_Orc : Enemy
         attackState = new Enemy_AttackState(this, stateMachine, "attack");
         battleState = new Enemy_BattleState(this, stateMachine, "battle");
     }
-
+    // khi bắt đầu quái vật sẽ đứng yên
     protected override void Start()
     {
         base.Start();

@@ -34,7 +34,7 @@ public abstract class EntityState
         anim.SetBool(animBoolName, false);
     }
 
-    public void CallAnimationTrigger()
+    public void AnimationTrigger()
     {
         triggerCalled = true;
     }
