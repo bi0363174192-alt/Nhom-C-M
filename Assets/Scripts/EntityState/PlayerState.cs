@@ -8,9 +8,10 @@ public abstract class PlayerState : EntityState
 
 {
     protected Player player;
-    protected PlayerInputSet input; 
- 
-    public PlayerState(Player player,StateMachine stateMachine, string animBoolName) :base(stateMachine, animBoolName)
+    protected PlayerInputSet input;
+
+
+    public PlayerState(Player player, StateMachine stateMachine, string animBoolName) : base(stateMachine, animBoolName)
     {
         this.player = player;   
 
@@ -18,7 +19,6 @@ public abstract class PlayerState : EntityState
         rb = player.rb;
         input = player.input;   
     }
-
     public override void Update()
     {
         base.Update();
@@ -26,10 +26,8 @@ public abstract class PlayerState : EntityState
 
         if (input.Player.Dash.WasPressedThisFrame() && CanDash())
             stateMachine.ChangeState(player.dashState);
+
     }
-
-
-
     private bool CanDash()
     {
         // hàm này thiết lập không cho ta đập mặt vào tường và dash liên tục

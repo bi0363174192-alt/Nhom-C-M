@@ -1,11 +1,6 @@
-﻿using Unity.IO.LowLevel.Unsafe;
-using UnityEditor.Profiling.Memory.Experimental;
 using UnityEngine;
 
-
-
 public abstract class EntityState
-
 {
     protected StateMachine stateMachine;
     protected string animBoolName;
@@ -14,7 +9,7 @@ public abstract class EntityState
     protected Rigidbody2D rb;
 
     protected float stateTimer;
-    protected bool triggerCalled;    
+    protected bool triggerCalled;
 
     public EntityState(StateMachine stateMachine, string animBoolName)
     {
@@ -27,10 +22,13 @@ public abstract class EntityState
         anim.SetBool(animBoolName, true);
         triggerCalled = false;
     }
+
     public virtual void Update()
     {
         stateTimer -= Time.deltaTime;
+        UpdateAnimationParameters();
     }
+
     public virtual void Exit()
     {
         anim.SetBool(animBoolName, false);
@@ -41,4 +39,8 @@ public abstract class EntityState
         triggerCalled = true;
     }
 
+    public virtual void UpdateAnimationParameters()
+    {
+
+    }
 }
