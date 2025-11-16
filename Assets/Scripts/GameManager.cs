@@ -22,7 +22,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         gameOverUi.SetActive(true);
     }
-    public void RestartGame() { isGameOver = false;  Time.timeScale = 1; SceneManager.LoadScene("Game"); }
+    public void RestartGame() 
+    {
+        isGameOver = false;  
+        Time.timeScale = 1; 
+        MySceneManager.LoadSceneWithLoading(SceneManager.GetActiveScene().name);
+    }
 
     public bool IsGameOver()
     {
@@ -40,7 +45,7 @@ public class GameManager : MonoBehaviour
     }
     public void GotoMenu()
     {
-        SceneManager.LoadScene("Menu");
+        MySceneManager.LoadSceneWithLoading("Menu");
         Time.timeScale = 1;
     }
     public void QuitGame()
