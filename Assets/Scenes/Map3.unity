@@ -401,10 +401,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 780682109}
     - target: {fileID: 4386212735458755641, guid: 32a0125bb11b38d4bb7c251bfb410309, type: 3}
-      propertyPath: scoreText
-      value: 
-      objectReference: {fileID: 780682108}
-    - target: {fileID: 4386212735458755641, guid: 32a0125bb11b38d4bb7c251bfb410309, type: 3}
       propertyPath: gameOverUi
       value: 
       objectReference: {fileID: 780682107}
@@ -687,18 +683,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 535659153}
-    - target: {fileID: 1748839401424236931, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
-      objectReference: {fileID: 0}
     - target: {fileID: 7241840304240773500, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 535659153}
-    - target: {fileID: 7241840304240773500, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GotoMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 7301900696259948256, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -713,17 +701,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4388801957448568585, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
   m_PrefabInstance: {fileID: 780682106}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &780682108 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5656864019971997585, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
-  m_PrefabInstance: {fileID: 780682106}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &780682109 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7623183930087477657, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
