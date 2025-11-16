@@ -337,7 +337,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8070509069476871128, guid: 68039b5c714ee6748ade4872c004d322, type: 3}
   m_PrefabInstance: {fileID: 123048150}
   m_PrefabAsset: {fileID: 0}
- UpdateMap1,2,3
 --- !u!1001 &151274177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -403,8 +402,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b42e872b16ad2e34d8abd0a726f5bfe7, type: 3}
-
- main
 --- !u!1 &340975007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1795676215456859036, guid: 739fe60947075834392a86c96e676d1d, type: 3}
@@ -13316,3 +13313,4 @@ SceneRoots:
   - {fileID: 775439405}
   - {fileID: 1066731115}
   - {fileID: 1410532657}
+  - {fileID: 151274177}
