@@ -171,6 +171,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: New_Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1795676215456859036, guid: 739fe60947075834392a86c96e676d1d, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373974251157406343, guid: 739fe60947075834392a86c96e676d1d, type: 3}
+      propertyPath: jumpForce
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2373974251157406343, guid: 739fe60947075834392a86c96e676d1d, type: 3}
       propertyPath: groundCheck
       value: 
