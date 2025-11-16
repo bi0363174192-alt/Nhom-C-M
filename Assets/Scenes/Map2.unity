@@ -1688,11 +1688,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 5.6532073
       objectReference: {fileID: 0}
     - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.5827503
+=======
+      value: 4.0062585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5878401
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7514742494866666250, guid: 210e8fb4417decb41aa762fcfadaf1af, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2266,6 +2274,14 @@ PrefabInstance:
     - target: {fileID: 1748839401424236931, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148877939372874484, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1066731116}
+    - target: {fileID: 2148877939372874484, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GotoMenu
       objectReference: {fileID: 0}
     - target: {fileID: 7241840304240773500, guid: 4f58895a5f3bcf14baa86a8ad4a87d84, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

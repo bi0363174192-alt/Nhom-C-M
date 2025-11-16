@@ -10,6 +10,8 @@ public class Setting : MonoBehaviour
     public GameObject mapImage1;
     public GameObject mapImage2;
     public GameObject mapImage3;
+    public GameObject mapImage4;
+
 
     // Hàm Start() để thiết lập trạng thái ban đầu khi Scene bắt đầu
     void Start()
@@ -27,6 +29,7 @@ public class Setting : MonoBehaviour
         mapImage1.SetActive(false);
         mapImage2.SetActive(false);
         mapImage3.SetActive(false);
+        mapImage4.SetActive(false);
 
         // Bật ảnh tương ứng với Map_i
         switch (Map_i)
@@ -39,6 +42,9 @@ public class Setting : MonoBehaviour
                 break;
             case 3:
                 mapImage3.SetActive(true);
+                break;
+            case 4:
+                mapImage4.SetActive(true);
                 break;
             default:
                 Debug.LogWarning("Map_i có giá trị không hợp lệ: " + Map_i);
@@ -53,9 +59,9 @@ public class Setting : MonoBehaviour
     {
         audioSource.PlayOneShot(clickClip);
         Map_i--; // Giảm chỉ số map
-        if (Map_i < 1) // Nếu về dưới 1, quay lại 3
+        if (Map_i < 1) // Nếu về dưới 1, quay lại 4
         {
-            Map_i = 3;
+            Map_i = 4;
         }
         DisplayCurrentMap(); // Cập nhật hiển thị map
         Debug.Log("Current Map: " + Map_i); // Xem trong Console để debug
@@ -66,7 +72,7 @@ public class Setting : MonoBehaviour
     {
         audioSource.PlayOneShot(clickClip);
         Map_i++; // Tăng chỉ số map
-        if (Map_i > 3) // Nếu vượt quá 3, quay lại 1
+        if (Map_i > 4) // Nếu vượt quá 4, quay lại 1
         {
             Map_i = 1;
         }
@@ -88,6 +94,9 @@ public class Setting : MonoBehaviour
                 break;
             case 3:
                 sceneToLoad = "Map3";
+                break;
+            case 4:
+                sceneToLoad = "MapBoss";
                 break;
             default:
                 Debug.LogError("Không thể tải map. Map_i có giá trị không hợp lệ: " + Map_i);
