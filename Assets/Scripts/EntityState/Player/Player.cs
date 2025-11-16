@@ -29,7 +29,7 @@ public class Player : Entity
     public float jumpForce = 5;
     public Vector2 wallJumpForce;
     [Range(0, 1)]
-    public float inAirMoveMultiplier = .7f; // Should be from 0 to 1;
+    public float inAirMoveMultiplier = .7f; 
     [Range(0, 1)]
     public float wallSlideSlowMultiplier = .7f;
     [Space]

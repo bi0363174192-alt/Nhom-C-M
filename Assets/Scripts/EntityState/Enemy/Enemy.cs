@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
+
     //quản lí các trạng thái của quái vật
 
     public Enemy_IdleState idleState;
@@ -28,13 +29,30 @@ public class Enemy : Entity
     public float moveAnimSpeedMultiplier = 1;
 
 
-   // các biến để kiểm tra player 
+    // các biến để kiểm tra player 
     [Header("Player detection")]
     [SerializeField] private LayerMask playerMask;
     [SerializeField] private Transform playerCheck;
     [SerializeField] private float playerCheckDistance = 10;
+    public Transform player { get; private set; }
 
 
+
+    public void TryEnterBattleState(Transform player) // Hàm kiếm vị trí của player và chuyển sang trạng thái chiến đấu
+    {
+        if (stateMachine.currentState == battleState || stateMachine.currentState == attackState) return;
+
+        this.player = player;
+        stateMachine.ChangeState(battleState); 
+    }
+
+    public Transform GetPlayerReference() //  Hàm kiếm vị trí của player khi không phát hiện được player ở trước mặt
+    {
+        if (player == null)
+            player = PlayerDetection().transform;
+
+        return player;
+    }
 
 
     // sử dụng raycast bắn 1 tia từ quái vật để kiểm tra player hoặc là chướng ngại vật
