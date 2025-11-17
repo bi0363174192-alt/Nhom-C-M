@@ -1,8 +1,10 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Entity_Health : MonoBehaviour
 {
+    private Slider healthBar;
     private Entity_VFX entityVFX;
     private Entity entity;
 
@@ -23,8 +25,9 @@ public class Entity_Health : MonoBehaviour
     {
         entityVFX = GetComponent<Entity_VFX>();
         entity = GetComponent<Entity>();
-
+        healthBar = GetComponentInChildren<Slider>();
         currentHp = maxHp;
+        UpdateHealthBar();
     }
 
 
@@ -43,7 +46,7 @@ public class Entity_Health : MonoBehaviour
     protected void ReduceHp(float damage)
     {
         currentHp -= damage;
-
+        UpdateHealthBar();
         if (currentHp <= 0) {
             Die();
     }
@@ -56,6 +59,12 @@ public class Entity_Health : MonoBehaviour
         entity?.EntityDeath(); // Chỉ gọi entity nếu không null
     }
 
+    private void UpdateHealthBar()
+    {
+        if (healthBar != null)
+            healthBar.value = currentHp / maxHp;
+        else return;
+    }
     private Vector2 CalculateKnockBack(float damage, Transform damagedealer)
     {
         int direction = transform.position.x > damagedealer.position.x ? 1 : -1; // Xác định hướng đẩy lùi dựa trên vị trí của damageDealer

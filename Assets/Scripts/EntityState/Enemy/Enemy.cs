@@ -37,6 +37,11 @@ public class Enemy : Entity
     public Transform player { get; private set; }
 
 
+    private void HandlePlayerDeath() // hàm xử lí khi player chết
+    {
+        stateMachine.ChangeState(idleState);
+    }
+
     public override void EntityDeath()
     {
         base.EntityDeath();
@@ -87,5 +92,15 @@ public class Enemy : Entity
         Gizmos.DrawLine(playerCheck.position, new Vector3(playerCheck.position.x + (facingDir * minRetreatDistance), playerCheck.position.y));
     }
 
+
+    private void OnEnable()
+    {
+        Player.OnPlayerDeath += HandlePlayerDeath; // Nếu player chết thì cho enemy chuyển về trạng thái idle
+    }
+
+    private void OnDisable()
+    {
+        Player.OnPlayerDeath -= HandlePlayerDeath; // Hủy đăng ký sự kiện khi đối tượng bị vô hiệu hóa để tránh lỗi
+    }
 
 }

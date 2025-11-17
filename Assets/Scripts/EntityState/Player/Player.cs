@@ -1,8 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class Player : Entity
 {
+    public static event Action OnPlayerDeath;  // Khai báo sự kiện khi player chết
+
     public PlayerInputSet input { get; private set; }
 
     public Player_IdleState idleState { get; private set; }
@@ -14,6 +18,8 @@ public class Player : Entity
     public PLayer_DashState dashState { get; private set; }
     public Player_BasicAttackState basicAttackState { get; private set; }
     public Player_JumpAttackState jumpAttackState { get; private set; }
+    public Player_DeadState deadState { get; private set; }
+
 
     [Header("Attack details")]
     public Vector2[] attackVelocity;
@@ -53,12 +59,21 @@ public class Player : Entity
         dashState = new PLayer_DashState(this, stateMachine, "dash");
         basicAttackState = new Player_BasicAttackState(this, stateMachine, "basicAttack");
         jumpAttackState = new Player_JumpAttackState(this, stateMachine, "jumpAttack");
+        deadState = new Player_DeadState(this, stateMachine, "dead");
+
     }
 
     protected override void Start()
     {
         base.Start();
         stateMachine.Initialize(idleState);
+    }
+
+    public override void EntityDeath()
+    {
+        base.EntityDeath();
+        OnPlayerDeath?.Invoke(); // Gọi tất cả các phương thức đã đăng ký sự kiện này khi player chết
+        stateMachine.ChangeState(deadState);
     }
 
     public void EnterAttackStateWithDelay()
