@@ -34,21 +34,7 @@ public class Entity_Health : MonoBehaviour, IDamgable
 
     public virtual bool TakeDamage(float damage, Transform damageDealer) // Transform damageDealer = để biết ai đã tấn công
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-
-=======
         if (isDead) return false;
->>>>>>> Stashed changes
-<<<<<<< Updated upstream
-=======
-=======
-        if (isDead) return false;
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 
         Vector2 knockback = CalculateKnockBack(damage,damageDealer);  // Tính toán lực đẩy lùi dựa trên sát thương và vị trí người tấn công
         float duration = CalculateDuration(damage);

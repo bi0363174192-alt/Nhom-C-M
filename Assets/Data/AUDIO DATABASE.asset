@@ -18,7 +18,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 410ee550969a00f4eb15d9d067d02423, type: 3}
     - {fileID: 8300000, guid: f8d5fa95a9d116542bc24d65c8c2344f, type: 3}
     - {fileID: 8300000, guid: e13a18d15ee0ab84cb34e33e97810efc, type: 3}
-    volume: 0.668
+    volume: 0.652
   - audioName: player_attackMiss
     clips:
     - {fileID: 8300000, guid: 803d499e7b2b5a549ad30668bd2ac152, type: 3}
