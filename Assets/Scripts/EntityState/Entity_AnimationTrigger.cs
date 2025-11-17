@@ -20,6 +20,10 @@ public class Entity_AnimationTrigger : MonoBehaviour
     }
     private void AttackTrigger()
     {
-        entityCombat.PerformAttack();
+        entityCombat.PerformAttack(10);
+    }
+    private void AttackKnockBackTrigger()
+    {
+        entityCombat.PerformAttack(35);
     }
 }
