@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11fd0b18d0429a4584142b027adcc17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Combat
-  damge: 5
+  damage: 10
   targetCheck: {fileID: 4202702141106924449}
   targetCheckRadius: 0.49
   whatIsTarget:
@@ -319,6 +319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Entity_VFX
   onDamageMaterial: {fileID: 2100000, guid: 73026857ed41971428d25b9e4c53cc5b, type: 2}
   onDamageVfxDuration: 0.15
+  hitVFXColor: {r: 1, g: 0, b: 0, a: 1}
+  hitVFX: {fileID: 8741873481522633218, guid: c4b6a4e8b32ce4940b8170bcceb481a0, type: 3}
 --- !u!114 &7075930742412802311
 MonoBehaviour:
   m_ObjectHideFlags: 0

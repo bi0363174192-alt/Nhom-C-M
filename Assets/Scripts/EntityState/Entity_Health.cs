@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Entity_Health : MonoBehaviour
+public class Entity_Health : MonoBehaviour, IDamgable  
 {
     private Slider healthBar;
     private Entity_VFX entityVFX;
@@ -32,16 +32,31 @@ public class Entity_Health : MonoBehaviour
     }
 
 
-    public virtual void TakeDamage(float damage, Transform damageDealer) // Transform damageDealer = để biết ai đã tấn công
+    public virtual bool TakeDamage(float damage, Transform damageDealer) // Transform damageDealer = để biết ai đã tấn công
     {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 
+=======
+        if (isDead) return false;
+>>>>>>> Stashed changes
+<<<<<<< Updated upstream
+=======
+=======
+        if (isDead) return false;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
         Vector2 knockback = CalculateKnockBack(damage,damageDealer);  // Tính toán lực đẩy lùi dựa trên sát thương và vị trí người tấn công
         float duration = CalculateDuration(damage);
 
         entity?.RecieveKnockBack(knockback, duration); // Chỉ gọi entity nếu không null
         entityVFX?.PlayOnDamageVFX();  // Chỉ gọi entityVFX nếu không null
-        ReduceHp(damage); 
+        ReduceHp(damage);
+        return true;
     }
 
     protected void ReduceHp(float damage)
