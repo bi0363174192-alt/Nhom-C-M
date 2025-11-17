@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 5903157428926538918}
   - component: {fileID: 2167666693570510508}
   - component: {fileID: 5600239878231665594}
+  - component: {fileID: 5648142855366254205}
   m_Layer: 8
   m_Name: Enemy_Orc
   m_TagString: Enemy
@@ -267,7 +268,7 @@ MonoBehaviour:
   attackRange: 1.6
   battleTimeDuration: 5
   minRetreatDistance: 1
-  retreatVelocity: {x: 0, y: 0}
+  retreatVelocity: {x: 4, y: 3}
   movementSpeed: 1.4
   idleTime: 2
   moveAnimSpeedMultiplier: 1
@@ -354,6 +355,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Entity_VFX
   onDamageMaterial: {fileID: 2100000, guid: 73026857ed41971428d25b9e4c53cc5b, type: 2}
   onDamageVfxDuration: 0.15
+  hitVFXColor: {r: 0, g: 0.554717, b: 0, a: 1}
+  hitVFX: {fileID: 8741873481522633218, guid: c4b6a4e8b32ce4940b8170bcceb481a0, type: 3}
 --- !u!114 &2167666693570510508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11fd0b18d0429a4584142b027adcc17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Combat
-  damge: 5
+  damage: 10
   targetCheck: {fileID: 5352434685817863240}
   targetCheckRadius: 0.6
   whatIsTarget:
@@ -392,6 +395,20 @@ MonoBehaviour:
   knockbackDuration: 0.2
   heavyKnockbackDuration: 0.4
   heavyDamageThreshold: 0.3
+--- !u!114 &5648142855366254205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3469179987106248001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7237d86607c5cf3428a0cb683080f90b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Entity_SFX
+  attackHit: player_attackHit
+  attackMiss: player_attackMiss
 --- !u!1 &4457892508595630824
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 ﻿using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class AudioManager : MonoBehaviour
 {
@@ -36,6 +37,10 @@ public class AudioManager : MonoBehaviour
         if (clip == null)
             return;
 
+
+
+        sfxSource.pitch = Random.Range(.95f, 1.1f);
+        sfxSource.volume = data.volume;
         sfxSource.clip = clip;
         sfxSource.PlayOneShot(clip);
      } 

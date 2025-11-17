@@ -18,10 +18,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 410ee550969a00f4eb15d9d067d02423, type: 3}
     - {fileID: 8300000, guid: f8d5fa95a9d116542bc24d65c8c2344f, type: 3}
     - {fileID: 8300000, guid: e13a18d15ee0ab84cb34e33e97810efc, type: 3}
-    volume: 1
+    volume: 0.668
   - audioName: player_attackMiss
     clips:
     - {fileID: 8300000, guid: 803d499e7b2b5a549ad30668bd2ac152, type: 3}
     - {fileID: 8300000, guid: 9deb859bb56df584c9fd527959e3d93a, type: 3}
     - {fileID: 8300000, guid: 37d39fab4ecd7ab4a89834a5c7eeb18c, type: 3}
-    volume: 1
+    volume: 0.658
