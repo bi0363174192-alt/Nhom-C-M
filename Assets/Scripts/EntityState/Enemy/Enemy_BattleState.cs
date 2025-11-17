@@ -14,9 +14,12 @@ public class Enemy_BattleState : EnemyState
     {
         base.Enter();
 
+        UpdateBattleTimer();
+
         if (player == null)
-            player = enemy.PlayerDetection().transform;
+            player = enemy.GetPlayerReference();
         //neu can giat lui lai thi lam cho quai vat giat lui lai truoc khi tan cong de tranh bug
+
 
         if (ShouldRetreat())
         {
