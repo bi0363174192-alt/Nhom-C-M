@@ -3,11 +3,9 @@
 public class PlayerCollection : MonoBehaviour
 {
     private GameManager gameManager;
-    private AudioManager audioManager;
     private void Awake()
     {
         gameManager = FindAnyObjectByType<GameManager>();
-        audioManager = FindAnyObjectByType<AudioManager>();
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
