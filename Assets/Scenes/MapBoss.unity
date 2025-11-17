@@ -36143,7 +36143,7 @@ Transform:
   m_GameObject: {fileID: 1267628523}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -79.5778, y: -8.674187, z: -10}
+  m_LocalPosition: {x: -79.57459, y: -8.069762, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37519,6 +37519,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9107740156977184702, guid: 739fe60947075834392a86c96e676d1d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1082965513
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37591,9 +37595,9 @@ PolygonCollider2D:
       - {x: -41.903763, y: 22.727713}
       - {x: -41.11081, y: 6.290127}
       - {x: -137.56442, y: 2.912157}
-      - {x: -137.29796, y: -23.611048}
-      - {x: 116.0426, y: -23.653547}
-      - {x: 116.01052, y: 1.7842135}
+      - {x: -137.38469, y: -23.003916}
+      - {x: 116.11246, y: -23.094818}
+      - {x: 115.6609, y: -2.2945962}
       - {x: 25.637127, y: 21.549799}
   m_UseDelaunayMesh: 0
 --- !u!4 &1707866210
