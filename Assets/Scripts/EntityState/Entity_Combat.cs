@@ -2,7 +2,6 @@
 
 public class Entity_Combat : MonoBehaviour
 {
-    public float damge = 10;
 
     [Header("Targer dectection")]
     [SerializeField] private Transform targetCheck;
@@ -10,7 +9,7 @@ public class Entity_Combat : MonoBehaviour
     [SerializeField] private LayerMask whatIsTarget;
 
 
-    public void PerformAttack()
+    public void PerformAttack(float damage)
     {
         
         foreach (var target in getDetectedColliders())  // Lặp qua tất cả các đối tượng bị phát hiện
@@ -18,7 +17,7 @@ public class Entity_Combat : MonoBehaviour
             Entity_Health targerHealth = target.GetComponent<Entity_Health>(); // Lấy component Entity_Health từ đối tượng bị phát hiện
 
             if (targerHealth != null) 
-                targerHealth.TakeDamage(damge, transform);
+                targerHealth.TakeDamage(damage, transform);
             
         }
     }

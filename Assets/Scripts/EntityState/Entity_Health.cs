@@ -26,6 +26,7 @@ public class Entity_Health : MonoBehaviour
         entityVFX = GetComponent<Entity_VFX>();
         entity = GetComponent<Entity>();
         healthBar = GetComponentInChildren<Slider>();
+
         currentHp = maxHp;
         UpdateHealthBar();
     }
@@ -33,7 +34,7 @@ public class Entity_Health : MonoBehaviour
 
     public virtual void TakeDamage(float damage, Transform damageDealer) // Transform damageDealer = để biết ai đã tấn công
     {
-        if (isDead) return;
+
 
         Vector2 knockback = CalculateKnockBack(damage,damageDealer);  // Tính toán lực đẩy lùi dựa trên sát thương và vị trí người tấn công
         float duration = CalculateDuration(damage);
