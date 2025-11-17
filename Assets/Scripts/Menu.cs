@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour
         audioSource.PlayOneShot(clickClip);
 
         //Tải màn hình LOADING
-        MySceneManager.LoadSceneWithLoading("Map2");
+        MySceneManager.LoadSceneWithLoading("Game");
     }
 
     // chuyển hướng tới cài đặt game? (dự định)

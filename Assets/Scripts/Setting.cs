@@ -5,10 +5,7 @@ public class Setting : MonoBehaviour
 {
     [SerializeField] private AudioClip clickClip; // âm thanh click vào button
     [SerializeField] private AudioSource audioSource;
-    
-    public int Map_start = 2; //Map đầu tiên trong danh sách lựa chọn
-    public int Map_end = 4; //Map cuối trong danh sách lựa chọn
-    private int Map_i = 2;
+    private int Map_i = 1;
 
     public GameObject mapImage1;
     public GameObject mapImage2;
@@ -62,9 +59,9 @@ public class Setting : MonoBehaviour
     {
         audioSource.PlayOneShot(clickClip);
         Map_i--; // Giảm chỉ số map
-        if (Map_i < Map_start) // Nếu về dưới 1, quay lại 4
+        if (Map_i < 1) // Nếu về dưới 1, quay lại 4
         {
-            Map_i = Map_end;
+            Map_i = 4;
         }
         DisplayCurrentMap(); // Cập nhật hiển thị map
         Debug.Log("Current Map: " + Map_i); // Xem trong Console để debug
@@ -75,9 +72,9 @@ public class Setting : MonoBehaviour
     {
         audioSource.PlayOneShot(clickClip);
         Map_i++; // Tăng chỉ số map
-        if (Map_i > Map_end) // Nếu vượt quá 4, quay lại 1
+        if (Map_i > 4) // Nếu vượt quá 4, quay lại 1
         {
-            Map_i = Map_start;
+            Map_i = 1;
         }
         DisplayCurrentMap(); // Cập nhật hiển thị map
         Debug.Log("Current Map: " + Map_i); // Xem trong Console để debug
