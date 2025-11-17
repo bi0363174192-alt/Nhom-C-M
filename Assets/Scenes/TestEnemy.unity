@@ -37058,13 +37058,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3469179987106248001, guid: de75a56282b34ec4d87258b05f000ea5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2036538559}
-    - targetCorrespondingSourceObject: {fileID: 3469179987106248001, guid: de75a56282b34ec4d87258b05f000ea5, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2036538558}
     - targetCorrespondingSourceObject: {fileID: 3469179987106248001, guid: de75a56282b34ec4d87258b05f000ea5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2036538560}
+    - targetCorrespondingSourceObject: {fileID: 3469179987106248001, guid: de75a56282b34ec4d87258b05f000ea5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2036538564}
     - targetCorrespondingSourceObject: {fileID: 2742031832492283564, guid: de75a56282b34ec4d87258b05f000ea5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1610316880}
@@ -37249,10 +37249,10 @@ PrefabInstance:
       addedObject: {fileID: 1825577216}
     - targetCorrespondingSourceObject: {fileID: 1795676215456859036, guid: 739fe60947075834392a86c96e676d1d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1825577218}
+      addedObject: {fileID: 1825577217}
     - targetCorrespondingSourceObject: {fileID: 1795676215456859036, guid: 739fe60947075834392a86c96e676d1d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1825577217}
+      addedObject: {fileID: 1825577222}
   m_SourcePrefab: {fileID: 100100000, guid: 739fe60947075834392a86c96e676d1d, type: 3}
 --- !u!1 &1825577211 stripped
 GameObject:
@@ -37271,7 +37271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11fd0b18d0429a4584142b027adcc17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Combat
-  damge: 10
+  damge: 35
   targetCheck: {fileID: 1891060795}
   targetCheckRadius: 0.5
   whatIsTarget:
@@ -37291,7 +37291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Entity_VFX
   onDamageMaterial: {fileID: 2100000, guid: 73026857ed41971428d25b9e4c53cc5b, type: 2}
   onDamageVfxDuration: 0.15
---- !u!114 &1825577218
+--- !u!114 &1825577222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37303,8 +37303,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e409cb9a95fcb4f8a5b9bd2f9c05f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Health
+  currentHp: 0
   maxHp: 100
   isDead: 0
+  knockbackPower: {x: 1.5, y: 2.5}
+  heavyKnockbackPower: {x: 7, y: 7}
+  knockbackDuration: 0.2
+  heavyKnockbackDuration: 0.4
+  heavyDamageThreshold: 0.3
 --- !u!1 &1891060794
 GameObject:
   m_ObjectHideFlags: 0
@@ -37360,20 +37366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Entity_VFX
   onDamageMaterial: {fileID: 2100000, guid: 73026857ed41971428d25b9e4c53cc5b, type: 2}
   onDamageVfxDuration: 0.15
---- !u!114 &2036538559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036538553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f41f0aa1ed1ba640bc7d793f25e170e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy_Health
-  maxHp: 100
-  isDead: 0
 --- !u!114 &2036538560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37386,12 +37378,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11fd0b18d0429a4584142b027adcc17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Entity_Combat
-  damge: 10
+  damge: 35
   targetCheck: {fileID: 1704276399}
   targetCheckRadius: 0.6
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &2036538564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036538553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f41f0aa1ed1ba640bc7d793f25e170e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy_Health
+  currentHp: 0
+  maxHp: 100
+  isDead: 0
+  knockbackPower: {x: 1.5, y: 2.5}
+  heavyKnockbackPower: {x: 7, y: 7}
+  knockbackDuration: 0.2
+  heavyKnockbackDuration: 0.4
+  heavyDamageThreshold: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class Entity_Combat : MonoBehaviour
     public void PerformAttack()
     {
         
-        foreach (var target in getDetectedColliders()) 
+        foreach (var target in getDetectedColliders())  // Lặp qua tất cả các đối tượng bị phát hiện
         {
             Entity_Health targerHealth = target.GetComponent<Entity_Health>(); // Lấy component Entity_Health từ đối tượng bị phát hiện
 
