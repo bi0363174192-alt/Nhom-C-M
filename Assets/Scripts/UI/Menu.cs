@@ -5,6 +5,10 @@ public class Menu : MonoBehaviour
     [SerializeField] private AudioClip clickClip; // âm thanh click vào button
     [SerializeField] private AudioSource audioSource;
 
+    private void Start()
+    {
+        AudioManager.instance.StartBGM("playlist_mainMenu");
+    }
     public void PlayGame()
     {
         audioSource.PlayOneShot(clickClip);
