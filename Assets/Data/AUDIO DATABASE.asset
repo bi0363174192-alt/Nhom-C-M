@@ -18,10 +18,39 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 410ee550969a00f4eb15d9d067d02423, type: 3}
     - {fileID: 8300000, guid: f8d5fa95a9d116542bc24d65c8c2344f, type: 3}
     - {fileID: 8300000, guid: e13a18d15ee0ab84cb34e33e97810efc, type: 3}
-    volume: 0.652
+    maxVolume: 1
   - audioName: player_attackMiss
     clips:
     - {fileID: 8300000, guid: 803d499e7b2b5a549ad30668bd2ac152, type: 3}
     - {fileID: 8300000, guid: 9deb859bb56df584c9fd527959e3d93a, type: 3}
     - {fileID: 8300000, guid: 37d39fab4ecd7ab4a89834a5c7eeb18c, type: 3}
-    volume: 0.658
+    maxVolume: 1
+  mainMenuMusic:
+  - audioName: playlist_mainMenu
+    clips:
+    - {fileID: 8300000, guid: 3ac313b7ad8666248b1f03ed7707a078, type: 3}
+    maxVolume: 0.239
+  levelMusic:
+  - audioName: playlist_level1
+    clips:
+    - {fileID: 8300000, guid: 169b54a97b407df4bb6bbe0ee2357587, type: 3}
+    - {fileID: 8300000, guid: 64cbdb253ee5ec7438f571b7be6d51f5, type: 3}
+    - {fileID: 8300000, guid: 636243a0ddec27a468a9e45c476fe04c, type: 3}
+    - {fileID: 8300000, guid: 5178cee77df0136408e80600c904b208, type: 3}
+    - {fileID: 8300000, guid: 97a7a87df63df114887bd64084269744, type: 3}
+    - {fileID: 8300000, guid: 3b78e188f8ae2f84188fc120974001f4, type: 3}
+    maxVolume: 0.245
+  - audioName: playlist_level2
+    clips:
+    - {fileID: 8300000, guid: 8965fdddfcbc6ae4ebe8d4d99bef63a0, type: 3}
+    - {fileID: 8300000, guid: 5a2486cdfb5fb7049a6c8fdf318a3f15, type: 3}
+    - {fileID: 8300000, guid: 117c36153e94e6d45af8361f6fa6c523, type: 3}
+    maxVolume: 0.245
+  - audioName: playlist_bosslevel
+    clips:
+    - {fileID: 8300000, guid: ab698116bbc2af24b98b23954b910600, type: 3}
+    - {fileID: 8300000, guid: 4280be8645b023a4a9810f04a1b5e9ee, type: 3}
+    - {fileID: 8300000, guid: 0684fe913f9354845a3fa34cc07b0cf7, type: 3}
+    - {fileID: 8300000, guid: 33b1bfa23a2a40e42845f6f880c9248b, type: 3}
+    - {fileID: 8300000, guid: 8d374f7f9d7b58a4e824af4b90c7452b, type: 3}
+    maxVolume: 0.245
