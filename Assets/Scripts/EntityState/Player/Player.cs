@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-using UnityEditor.Tilemaps;
+using UnityEngine.Tilemaps;
 using UnityEngine;
 
 public class Player : Entity

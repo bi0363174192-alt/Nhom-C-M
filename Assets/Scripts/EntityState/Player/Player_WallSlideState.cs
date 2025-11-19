@@ -1,6 +1,5 @@
-﻿using UnityEditor.Tilemaps;
+﻿using UnityEngine.Tilemaps;
 using UnityEngine;
-using UnityEngine.InputSystem.iOS;
 
 public class Player_WallSlideState : PlayerState
 {
