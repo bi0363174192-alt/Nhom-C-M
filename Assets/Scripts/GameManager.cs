@@ -6,12 +6,14 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverUi;
     [SerializeField] private GameObject gameWinUi;
+    [SerializeField] private GameObject pausePanel;
     bool isGameOver = false;
     bool isGameWin = false;
     void Start()
     {
         gameOverUi.SetActive(false);
         gameWinUi.SetActive(false);
+        pausePanel.SetActive(false);
     }
 
 
@@ -38,6 +40,19 @@ public class GameManager : MonoBehaviour
         isGameWin = true;
         Time.timeScale = 0;
         gameWinUi.SetActive(true);
+    }
+    public void PauseGame()
+    {
+        if(Time.timeScale == 1f)
+        {
+            pausePanel.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
+    public void ResumeGame()
+    {
+        pausePanel.SetActive(false);
+        Time.timeScale = 1f;
     }
     public bool IsGameWin()
     {
