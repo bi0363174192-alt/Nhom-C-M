@@ -77554,6 +77554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 275df93c77ff4044ab3f4a1a3161820f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
+  audioManager: {fileID: 0}
   sceneName: Map3
   spawnPoint: {x: 0, y: 0}
 --- !u!61 &1984269133
@@ -77917,6 +77918,10 @@ PrefabInstance:
     - target: {fileID: 5154210755831828398, guid: 86b9309be23136d40855e11eda241756, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6031480012087234236, guid: 86b9309be23136d40855e11eda241756, type: 3}
+      propertyPath: musicGroupName
+      value: playlist_level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
