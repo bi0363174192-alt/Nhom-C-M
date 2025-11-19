@@ -13,8 +13,12 @@ public class Menu : MonoBehaviour
     {
         audioSource.PlayOneShot(clickClip);
 
+
+
+        AudioManager.instance.StopBGM();
         //Tải màn hình LOADING
         MySceneManager.LoadSceneWithLoading("Map2");
+        AudioManager.instance.StartBGM("playlist_level1");
     }
 
     // chuyển hướng tới cài đặt game? (dự định)
@@ -22,6 +26,7 @@ public class Menu : MonoBehaviour
     {
         audioSource.PlayOneShot(clickClip);
         MySceneManager.LoadSceneWithLoading("Setting");
+        AudioManager.instance.StartBGM("playlist_mainMenu");
     }
 
     //url cho chuyển hướng bên ngoài, thêm liên kết bên dưới OnClick() của Button (Inspector trong unity)
