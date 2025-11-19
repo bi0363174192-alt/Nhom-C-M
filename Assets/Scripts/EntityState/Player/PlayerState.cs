@@ -1,5 +1,7 @@
 ﻿using Unity.IO.LowLevel.Unsafe;
-using UnityEditor.Profiling.Memory.Experimental;
+#if UNITY_EDITOR
+using UnityEditor.Profiling.Memory;
+#endif
 using UnityEngine;
 
 
