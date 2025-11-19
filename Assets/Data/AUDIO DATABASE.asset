@@ -29,7 +29,7 @@ MonoBehaviour:
   - audioName: playlist_mainMenu
     clips:
     - {fileID: 8300000, guid: 3ac313b7ad8666248b1f03ed7707a078, type: 3}
-    maxVolume: 0.239
+    maxVolume: 0.148
   levelMusic:
   - audioName: playlist_level1
     clips:
@@ -39,13 +39,13 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 5178cee77df0136408e80600c904b208, type: 3}
     - {fileID: 8300000, guid: 97a7a87df63df114887bd64084269744, type: 3}
     - {fileID: 8300000, guid: 3b78e188f8ae2f84188fc120974001f4, type: 3}
-    maxVolume: 0.245
+    maxVolume: 0.703
   - audioName: playlist_level2
     clips:
     - {fileID: 8300000, guid: 8965fdddfcbc6ae4ebe8d4d99bef63a0, type: 3}
     - {fileID: 8300000, guid: 5a2486cdfb5fb7049a6c8fdf318a3f15, type: 3}
     - {fileID: 8300000, guid: 117c36153e94e6d45af8361f6fa6c523, type: 3}
-    maxVolume: 0.245
+    maxVolume: 0.985
   - audioName: playlist_bosslevel
     clips:
     - {fileID: 8300000, guid: ab698116bbc2af24b98b23954b910600, type: 3}

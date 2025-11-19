@@ -13,6 +13,11 @@ public class Setting : MonoBehaviour
     public GameObject mapImage4;
 
 
+    //tao bien giu ten map
+    private const string Map2 = "Map2";
+    private const string Map3 = "Map3";
+    private const string MapBoss = "MapBoss";
+
     // Hàm Start() để thiết lập trạng thái ban đầu khi Scene bắt đầu
     void Start()
     {
@@ -106,7 +111,20 @@ public class Setting : MonoBehaviour
         if (!string.IsNullOrEmpty(sceneToLoad))
         {
             // Tải màn hình LOADING (thay vì tải map trực tiếp)
+            AudioManager.instance.StopBGM();
             MySceneManager.LoadSceneWithLoading(sceneToLoad);
+            switch (sceneToLoad)
+            {
+                case Map2:
+                    AudioManager.instance.StartBGM("playlist_level1");
+                    break;
+                case Map3:
+                    AudioManager.instance.StartBGM("playlist_level2");
+                    break;
+                case MapBoss:
+                    AudioManager.instance.StartBGM("playlist_bosslevel");
+                    break;
+            }
         }
         else
         {

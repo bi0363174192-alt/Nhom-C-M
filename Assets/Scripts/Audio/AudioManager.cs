@@ -88,6 +88,8 @@ public class AudioManager : MonoBehaviour
     }
     private IEnumerator SwitchMusicCo(string musicGroup)
     {
+
+        Debug.Log("Playing: " + musicGroup);
         AudioClipData data = audioDB.Get(musicGroup);
 
 
@@ -105,7 +107,10 @@ public class AudioManager : MonoBehaviour
             }
         }
         if (bgmSource.isPlaying)
+        {
             yield return FadeVolumeCo(bgmSource, 0, 1f);
+            bgmSource.Stop();
+        }
 
         lastMusicPlayed = nextMusic;
         bgmSource.clip = nextMusic;
