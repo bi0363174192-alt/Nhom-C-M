@@ -21,11 +21,9 @@
 ## 🚀 Cách chạy dự án
 Dự án Unity này **phải cài đặt sẵn 3 thứ sau** thì mới clone và chạy được 100% (không bị thiếu sprite, prefab, scene...):
 
-1. **Git**  
-   → Tải tại: https://git-scm.com/downloads
+1. **Git**  → Tải tại: https://git-scm.com/downloads
 
-2. **Unity** 
-   → Tải tại : https://docs.unity3d.com/hub/manual/InstallHub.html
+2. **Unity** → Tải tại : https://docs.unity3d.com/hub/manual/InstallHub.html
 3. **Cài Unity Editor Version**
     ![Unity Editor Version](<unityVersion.png>)
 4. **Mở cmd gõ các lệnh sau**
