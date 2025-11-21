@@ -25,7 +25,7 @@ Dự án Unity này **phải cài đặt sẵn 3 thứ sau** thì mới clone v�
 
 2. **Unity** → Tải tại : https://docs.unity3d.com/hub/manual/InstallHub.html
 3. **Cài Unity Editor Version**
-    ![Unity Editor Version](<unityVersion.png>)
+    ![Unity Editor Version](<Images/unityVersion.png>)
 4. **Mở cmd gõ các lệnh sau**
     ```bash
     git install lfs
@@ -33,7 +33,7 @@ Dự án Unity này **phải cài đặt sẵn 3 thứ sau** thì mới clone v�
     cd Nhom-C-M
     git lfs pull
 5. **Thêm dự án từ thư mục vừa clone về**
-    ![Unity Editor Version](<openDisk.png>)
+    ![Unity Editor Version](<Images/openDisk.png>)
 
 ### Vậy là xong rồi!! Giờ các bạn chỉ cần mở và chạy thử dự án của tụi mình thôi <3
 > **⚠️ Lưu ý nhỏ  từ nhóm C&M**  
